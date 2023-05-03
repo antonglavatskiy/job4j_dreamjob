@@ -1,17 +1,20 @@
 package ru.job4j.dreamjob.model;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-public class Vacancy {
+public class Candidate {
     private int id;
-    private String title;
+    private String name;
     private String description;
     private LocalDateTime creationDate;
+    private String viewDate;
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-yyyy HH:mm");
 
-    public Vacancy(int id, String title, String description, LocalDateTime creationDate) {
+    public Candidate(int id, String name, String description, LocalDateTime creationDate) {
         this.id = id;
-        this.title = title;
+        this.name = name;
         this.description = description;
         this.creationDate = creationDate;
     }
@@ -24,12 +27,12 @@ public class Vacancy {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -48,6 +51,10 @@ public class Vacancy {
         this.creationDate = creationDate;
     }
 
+    public String getViewDate() {
+        return creationDate.format(FORMATTER);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -56,12 +63,12 @@ public class Vacancy {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Vacancy vacancy = (Vacancy) o;
-        return id == vacancy.id;
+        Candidate candidate = (Candidate) o;
+        return id == candidate.id && Objects.equals(name, candidate.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(id, name);
     }
 }
