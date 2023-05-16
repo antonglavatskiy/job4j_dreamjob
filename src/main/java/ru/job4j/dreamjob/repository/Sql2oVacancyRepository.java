@@ -55,7 +55,7 @@ public class Sql2oVacancyRepository implements VacancyRepository {
     @Override
     public boolean update(Vacancy vacancy) {
         try (Connection connection = sql2o.open()) {
-            var sql = """
+            String sql = """
                     update vacancies
                     set title = :title, description = :description,
                         creation_date = :creationDate, visible = :visible,
