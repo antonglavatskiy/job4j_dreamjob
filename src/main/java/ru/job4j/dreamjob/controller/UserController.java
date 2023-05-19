@@ -35,4 +35,21 @@ public class UserController {
         }
         return "redirect:/vacancies";
     }
+
+    @GetMapping("/login")
+    public String getLoginPage() {
+        return "users/login";
+    }
+
+    @PostMapping("/login")
+    public String loginUser(@ModelAttribute User user, Model model) {
+        Optional<User> optionalUser = userService.findByEmailAndPassword(
+                user.getEmail(), user.getPassword()
+        );
+        if (optionalUser.isEmpty()) {
+            model.addAttribute("error", "Почта или пароль введены неверно");
+            return "users/login";
+        }
+        return "redirect:/vacancies";
+    }
 }
