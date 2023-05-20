@@ -30,25 +30,13 @@ public class CandidateController {
     }
 
     @GetMapping
-    public String getAll(Model model, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        if (user == null) {
-            user = new User();
-            user.setName("Гость");
-        }
-        model.addAttribute("user", user);
+    public String getAll(Model model) {
         model.addAttribute("candidates", candidateService.findAll());
         return "candidates/list";
     }
 
     @GetMapping("/create")
-    public String getCreationPage(Model model, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        if (user == null) {
-            user = new User();
-            user.setName("Гость");
-        }
-        model.addAttribute("user", user);
+    public String getCreationPage(Model model) {
         model.addAttribute("cities", cityService.findAll());
         return "candidates/create";
     }
@@ -65,13 +53,7 @@ public class CandidateController {
     }
 
     @GetMapping("/{id}")
-    public String getById(Model model, @PathVariable int id, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        if (user == null) {
-            user = new User();
-            user.setName("Гость");
-        }
-        model.addAttribute("user", user);
+    public String getById(Model model, @PathVariable int id) {
         Optional<Candidate> candidate = candidateService.findById(id);
         if (candidate.isEmpty()) {
             model.addAttribute("message", "Кандидат с указанным идентификатором не найден");

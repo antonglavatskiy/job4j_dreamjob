@@ -1,27 +1,14 @@
-2023-05-20 12:04:16.156  INFO 69305 --- [restartedMain] ru.job4j.dreamjob.Main                   : Starting Main using Java 18 on MacBook-Air-Anton.local with PID 69305 (/Users/anton/projects/job4j_dreamjob/target/classes started by anton in /Users/anton/projects/job4j_dreamjob)
-2023-05-20 12:04:16.156  INFO 69305 --- [restartedMain] ru.job4j.dreamjob.Main                   : No active profile set, falling back to 1 default profile: "default"
-2023-05-20 12:04:16.182  INFO 69305 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-05-20 12:04:16.182  INFO 69305 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-05-20 12:04:16.603  INFO 69305 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-20 12:04:16.608  INFO 69305 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-20 12:04:16.608  INFO 69305 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2023-05-20 12:04:16.638  INFO 69305 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-20 12:04:16.638  INFO 69305 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 456 ms
-2023-05-20 12:04:16.767  INFO 69305 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-05-20 12:04:16.833  INFO 69305 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-05-20 12:04:16.854  INFO 69305 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-20 12:04:16.865  INFO 69305 --- [restartedMain] ru.job4j.dreamjob.Main                   : Started Main in 1.04 seconds (JVM running for 1.238)
-2023-05-20 12:04:34.779  INFO 69305 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-20 12:06:35.962  INFO 69336 --- [restartedMain] ru.job4j.dreamjob.Main                   : Starting Main using Java 18 on MacBook-Air-Anton.local with PID 69336 (/Users/anton/projects/job4j_dreamjob/target/classes started by anton in /Users/anton/projects/job4j_dreamjob)
-2023-05-20 12:06:35.963  INFO 69336 --- [restartedMain] ru.job4j.dreamjob.Main                   : No active profile set, falling back to 1 default profile: "default"
-2023-05-20 12:06:35.983  INFO 69336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-05-20 12:06:35.983  INFO 69336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-05-20 12:06:36.413  INFO 69336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-20 12:06:36.417  INFO 69336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-20 12:06:36.417  INFO 69336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2023-05-20 12:06:36.445  INFO 69336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-20 12:06:36.445  INFO 69336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 461 ms
-2023-05-20 12:06:36.578  INFO 69336 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-05-20 12:06:36.648  INFO 69336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-05-20 12:06:36.668  INFO 69336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-20 12:06:36.675  INFO 69336 --- [restartedMain] ru.job4j.dreamjob.Main                   : Started Main in 1.121 seconds (JVM running for 1.341)
+2023-05-20 15:37:13.229  INFO 72153 --- [restartedMain] ru.job4j.dreamjob.Main                   : Starting Main using Java 18 on MacBook-Air-Anton.local with PID 72153 (/Users/anton/projects/job4j_dreamjob/target/classes started by anton in /Users/anton/projects/job4j_dreamjob)
+2023-05-20 15:37:13.230  INFO 72153 --- [restartedMain] ru.job4j.dreamjob.Main                   : No active profile set, falling back to 1 default profile: "default"
+2023-05-20 15:37:13.264  INFO 72153 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-20 15:37:13.264  INFO 72153 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-20 15:37:13.806  INFO 72153 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-20 15:37:13.811  INFO 72153 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-20 15:37:13.811  INFO 72153 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-05-20 15:37:13.839  INFO 72153 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-20 15:37:13.839  INFO 72153 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2023-05-20 15:37:13.959  INFO 72153 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-20 15:37:14.020  INFO 72153 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-20 15:37:14.039  INFO 72153 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-20 15:37:14.048  INFO 72153 --- [restartedMain] ru.job4j.dreamjob.Main                   : Started Main in 1.161 seconds (JVM running for 1.376)
+2023-05-20 15:37:19.392  INFO 72153 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
