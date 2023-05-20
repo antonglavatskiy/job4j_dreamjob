@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ru.job4j.dreamjob.model.User;
 import ru.job4j.dreamjob.service.UserService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 @Controller
@@ -42,7 +44,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String loginUser(@ModelAttribute User user, Model model) {
+    public String loginUser(@ModelAttribute User user, Model model, HttpServletRequest request) {
         Optional<User> optionalUser = userService.findByEmailAndPassword(
                 user.getEmail(), user.getPassword()
         );
@@ -50,6 +52,14 @@ public class UserController {
             model.addAttribute("error", "Почта или пароль введены неверно");
             return "users/login";
         }
+        HttpSession session = request.getSession();
+        session.setAttribute("user", optionalUser.get());
         return "redirect:/vacancies";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/users/login";
     }
 }
